@@ -47,3 +47,12 @@ This project is designed to mirror how real internal ops tools are built and use
   * Assign priority and ownership
   * Update status (Open → In Progress → Resolved)
   * Dashboard updates instantly
+
+# Dashboard Screenshots
+
+![Screenshot](screenshots/overview.png)
+
+![Screenshot](screenshots/riskscoredistribution.png)
+
+![Screenshot](screenshots/shapfeatureimpact.png)
+
