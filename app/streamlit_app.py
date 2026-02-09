@@ -93,6 +93,7 @@ def load_order_explanations(order_id: str):
 st.set_page_config(page_title="Blinkit Ops Risk Dashboard", layout="wide")
 
 st.title("Blinkit Ops: Delivery Risk & Performance")
+st.caption("Ops intelligence dashboard with risk scoring, SHAP explainability, and intervention case management.")
 
 @st.cache_data(ttl=60)
 def load_kpis():
