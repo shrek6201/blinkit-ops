@@ -111,7 +111,7 @@ blinkit-ops/
 ```
 
 ## Why this project matters
-### My project goes beyong basic dashboards
+### My project goes beyond basic dashboards
  * combines SQL, Python, and ML in one workflow
  * shows how predictions are operationalized
  * emphasizes explainability and decision-making
