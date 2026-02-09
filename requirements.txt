@@ -1,0 +1,11 @@
+streamlit
+pandas
+numpy
+sqlalchemy
+psycopg2-binary
+plotly
+python-dotenv
+xgboost
+shap
+joblib
+pyarrow
