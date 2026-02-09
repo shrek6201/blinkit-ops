@@ -91,17 +91,24 @@ This project is designed to mirror how real internal ops tools are built and use
 
 ## Repository Structure
 
-app/
-  streamlit_app.py        # Dashboard
-ml/
-  train_delay_model.py    # Baseline model
-  train_xgb_shap.py       # XGBoost + SHAP
-sql/
-  schema.sql              # Core schemas & tables
-  kpis.sql                # KPI aggregations
-  views.sql               # Dashboard views
-screenshots/
-requirements.txt
+```text
+blinkit-ops/
+├─ app/
+│  └─ streamlit_app.py
+├─ ml/
+│  ├─ train_delay_model.py
+│  └─ train_xgb_shap.py
+├─ sql/
+│  ├─ schema.sql
+│  ├─ kpis.sql
+│  └─ views.sql
+├─ screenshots/
+│  ├─ overview.png
+│  ├─ order_explainability.png
+│  └─ case_management.png
+├─ requirements.txt
+└─ README.md
+```
 
 ## Why this project matters
 ### My project goes beyong basic dashboards
