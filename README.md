@@ -50,9 +50,68 @@ This project is designed to mirror how real internal ops tools are built and use
 
 # Dashboard Screenshots
 
+ * Overview
 ![Screenshot](screenshots/overview.png)
 
+ * Risk score distribution
 ![Screenshot](screenshots/riskscoredistribution.png)
 
+ * SHAP Feature Impact
 ![Screenshot](screenshots/shapfeatureimpact.png)
 
+# Tech Stack
+### Data & Analytics
+ * PostgreSQL
+ * SQL (CTEs, window functions, views)
+ * Pandas
+
+### Machine Learning
+ * XGBoost
+ * SHAP
+ * scikit-learn
+
+### Orchestration
+ * Apache airflow (local)
+
+### Visualization & App
+ * Streamlit
+ * Plotly
+
+### Deployment
+ * Neon (managed Postgres)
+ * Render (Streamlit app)
+
+# Data Pipeline Overview
+ 1. Raw operational data loaded into Postgres
+ 2. SQL transformations build analytics-ready fact tables
+ 3. KPIs and views generated for dashboard consumption
+ 4. ML model trained to predict late deliveries
+ 5. SHAP explanations written back to the database
+ 6. Streamlit app reads analytics + ML outputs live
+
+## Repository Structure
+
+app/
+  streamlit_app.py        # Dashboard
+ml/
+  train_delay_model.py    # Baseline model
+  train_xgb_shap.py       # XGBoost + SHAP
+sql/
+  schema.sql              # Core schemas & tables
+  kpis.sql                # KPI aggregations
+  views.sql               # Dashboard views
+screenshots/
+requirements.txt
+
+## Why this project matters
+### My project goes beyong basic dashboards
+ * combines SQL, Python, and ML in one workflow
+ * shows how predictions are operationalized
+ * emphasizes explainability and decision-making
+ * mirrors real internal analytics tools
+
+## What I would improve next
+ * Alerting on high-risk orders
+ * SLA breach forecasting
+ * Partner performance scorecards
+ * Automated retraining
